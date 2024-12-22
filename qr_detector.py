@@ -422,9 +422,9 @@ def reverseMap(points, refPoint):
 
 def perspective_transform(img, points, resolution):
   minigrid = perspective_points(points, 26).reshape((-1,  2))
-  plt.imshow(img)
-  plt.scatter(minigrid[:, 0], minigrid[:, 1])
-  plt.show()
+  # plt.imshow(img)
+  # plt.scatter(minigrid[:, 0], minigrid[:, 1])
+  # plt.show()
 
   grid = perspective_points(points, resolution)
   fl_grid = np.floor(grid).astype(int)
